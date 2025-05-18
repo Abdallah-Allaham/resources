@@ -4,8 +4,29 @@ import java.util.Scanner;
 
 public class BeautifulMatrix {
     public static void main(String[] args){
-        //from me hard code
-        //        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
+        int row=0;
+        int column=0;
+
+        for(int i=0;i<5;i++) {
+            for (int j = 0; j < 5; j++) {
+                int num = in.nextInt();
+                if (num == 1) {
+                    row = i;
+                    column = j;
+                }
+            }
+        }
+
+        int moves=Math.abs(row-2) + Math.abs(column-2);
+        System.out.println(moves);
+    }
+}
+
+
+
+//from me hard code
+//        Scanner in = new Scanner(System.in);
 //        int[][] matrix = new int[5][5];
 //        int row = 0;
 //        int column = 0;
@@ -42,22 +63,4 @@ public class BeautifulMatrix {
 //
 //        System.out.println(move);
 
-        // new and semple way
-        Scanner in = new Scanner(System.in);
-        int row=0;
-        int column=0;
-
-        for(int i=0;i<5;i++) {
-            for (int j = 0; j < 5; j++) {
-                int num = in.nextInt();
-                if (num == 1) {
-                    row = i;
-                    column = j;
-                }
-            }
-        }
-
-        int moves=Math.abs(row-2) + Math.abs(column-2);
-        System.out.println(moves);
-    }
-}
+// new and semple way

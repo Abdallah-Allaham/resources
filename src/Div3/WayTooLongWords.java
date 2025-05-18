@@ -8,20 +8,15 @@ public class WayTooLongWords {
         Scanner in = new Scanner(System.in);
         int line = in.nextInt();
 
-        String[] words = new String[line];
-
         for (int i = 0; i < line; i++) {
-            words[i] = in.next().toLowerCase();
-        }
-
-        for (int i = 0; i < line; i++) {
-            if (words[i].length() > 10) {
+            String word= in.next().toLowerCase();
+            if (word.length() > 10) {
                 System.out.println(
-                        words[i].charAt(0) + "" +
-                        (words[i].length() - 2) +
-                        words[i].charAt(words[i].length() - 1));
+                        word.charAt(0) + "" +
+                        (word.length() - 2) +
+                        word.charAt(word.length() - 1));
             } else {
-                System.out.println(words[i]);
+                System.out.println(word);
             }
         }
     }
