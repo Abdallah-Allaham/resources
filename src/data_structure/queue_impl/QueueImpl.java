@@ -61,4 +61,3 @@ public class QueueImpl {
         return numOfItems;
     }
 }
-
