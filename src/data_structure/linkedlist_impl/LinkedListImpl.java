@@ -13,6 +13,21 @@ public class LinkedListImpl {
         first = node;
     }
 
+    public void insertLast(int num){
+        Node node = new Node(num);
+
+        if(first == null){
+            first = node;
+            return;
+        }
+
+        Node last = first;
+        while (last.next != null){
+            last = last.next;
+        }
+        last.next = node;
+    }
+
     public void printList() {
         Node current = first;
         while (current != null) {

@@ -6,8 +6,11 @@ public class Main {
 
         linkedList.insertFirst(3);
         linkedList.insertFirst(7);
+        linkedList.insertLast(1000);
         linkedList.insertFirst(10);
-        linkedList.insertFirst(55);
+        linkedList.insertLast(55);
+
+        linkedList.delete(1000);
 
         linkedList.printList();
 
