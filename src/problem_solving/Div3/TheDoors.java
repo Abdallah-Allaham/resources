@@ -22,7 +22,7 @@ public class TheDoors {
             else openedRight++;
 
             if (openedLeft == totalLeft || openedRight == totalRight) {
-                System.out.println(i + 1); // +1 لأن الفهرسة تبدأ من 0
+                System.out.println(i + 1);
                 return;
             }
         }
