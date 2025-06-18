@@ -25,3 +25,19 @@ public class RegistrationSystem {
         }
     }
 }
+
+//
+//int n= in.nextInt();
+//Map<String,Integer> map = new HashMap<>();
+//
+//        for (int i = 0; i < n; i++) {
+//String name= in.next();
+//            if (map.containsKey(name)){
+//int num=map.get(name);
+//                System.out.println(name+num++);
+//                map.put(name,num);
+//            }else {
+//                    System.out.println("OK");
+//                map.put(name,1);
+//            }
+//                    }
